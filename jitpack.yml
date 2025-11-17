@@ -1,0 +1,5 @@
+jdk:
+  - openjdk17
+install:
+  - mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -X > full-build.log 2>&1
+  - cat full-build.log
